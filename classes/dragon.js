@@ -1,4 +1,4 @@
-const FriendlyDragon = require('./friendly-dragon')
+
 
 class Dragon{
   constructor(name,color){
@@ -18,6 +18,7 @@ console.log(puff);
 console.log(puff.breathesFire());
 
 
+module.exports = Dragon
 /****************************************************************************/
 /******************* DO NOT EDIT CODE BELOW THIS LINE ***********************/
 
