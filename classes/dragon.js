@@ -1,3 +1,5 @@
+const FriendlyDragon = require('./friendly-dragon')
+
 class Dragon{
   constructor(name,color){
     this.name = name
