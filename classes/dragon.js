@@ -18,7 +18,7 @@ console.log(puff);
 console.log(puff.breathesFire());
 
 
-module.exports = Dragon
+
 /****************************************************************************/
 /******************* DO NOT EDIT CODE BELOW THIS LINE ***********************/
 

@@ -14,7 +14,7 @@ class EvilDragon extends Dragon{
         })
     }
     burnsNemesis(){
-        return (`${this.name} destroys ${this.nemesis} with fire! WHOOOSH!!!.`)
+        return (`${this.name} destroys ${this.nemesis} with fire! WHOOOSH!!!`)
     }
 }
 

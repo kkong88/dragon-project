@@ -1,23 +1,35 @@
-/*class Dragon{
-  constructor(name,color){
-    this.name = name
-    this.color = color
-  }
-  breathesFire(name){
-    return (`${this.name} breathes fire everywhere! BURN!!!!`)
-  }
-  static getDragons(...dragons){
-    dragons.map((dragon) => dragon.name)
-  }
-}
-
-const puff = new Dragon("Puff", "green");
-console.log(puff);
-console.log(puff.breathesFire());
-
-*/
+const FriendlyDragon = require('./classes/friendly-dragon.js')
+const EvilDragon = require('./classes/evil-dragon.js');
 
 
+const falkor = new FriendlyDragon(
+  "Falkor",
+  "white",
+  [
+    'save Atreyu from the swamp',
+    'save Atreyu from the Nothing',
+    'scare the local bullies into a dumpster'
+  ],
+  "Bastian"
+);
+const smaug = new EvilDragon(
+  'Smaug',
+  'black',
+  [
+    'take over your mountain kingdom',
+    'steal all your dwarven gold',
+    'burn down your floating village'
+  ],
+  'Dwarf King'
+)
+
+let allDragons = EvilDragon.getDragons(falkor,smaug) 
+
+module.exports = {
+  falkor,
+  smaug,
+  allDragons,
+};
 
 /****************************************************************************/
 /******************* DO NOT EDIT CODE BELOW THIS LINE ***********************/
@@ -26,6 +38,7 @@ try {
   module.exports = {
     falkor,
     smaug,
+    allDragons,
   };
 } catch {
   module.exports = null;
